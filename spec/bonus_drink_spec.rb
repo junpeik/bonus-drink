@@ -19,7 +19,7 @@ describe BonusDrink do
     specify { expect(bonus_drink.total_count_for(11)).to eq 16 }
   end
   context 'when bought 100 bins' do
-    let(:bonus_drink) { BonusDrink.new(0) }
-    specify { expect(bonus_drink.total_count_for(100)).to eq 133 }
+    let(:bonus_drink) { BonusDrink.new(15) }
+    specify { expect(bonus_drink.total_count_for(100)).to eq 138 }
   end
 end
